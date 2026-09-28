@@ -6,6 +6,7 @@
 
 const TAUX_TVA = 0.21;
 
+
 /** Arrondit un montant en euros à deux décimales. */
 function arrondir(montant) {
   return Math.round(montant * 100) / 100;
@@ -42,3 +43,7 @@ module.exports = {
   avecTva,
   total,
 };
+
+
+
+
