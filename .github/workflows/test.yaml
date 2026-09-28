@@ -1,0 +1,15 @@
+name: Automatisation des tests
+
+on: [pull_request]
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v7
+
+            - run: npm install
+            - run: npm test
+        
+
+
